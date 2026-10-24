@@ -18,15 +18,18 @@ public class CalculadoraNotas {
     /** Aprueba quien obtiene 3.0 o más. */
     public boolean estaAprobado(double notaFinal) {
         validarNota(notaFinal);
-        return notaFinal > NOTA_APROBATORIA;
+        return notaFinal >= NOTA_APROBATORIA;
     }
 
     /** Escala de desempeño: Superior, Alto, Básico, Bajo. */
     public String desempeno(double notaFinal) {
         validarNota(notaFinal);
-        if (notaFinal >= 4.6) return "Superior";
-        if (notaFinal >= 4.0) return "Alto";
-        if (notaFinal >= 3.0) return "Básico";
+        if (notaFinal >= 4.6)
+            return "Superior";
+        if (notaFinal >= 4.0)
+            return "Alto";
+        if (notaFinal >= 3.0)
+            return "Básico";
         return "Bajo";
     }
 

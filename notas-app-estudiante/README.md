@@ -2,9 +2,9 @@
 
 | Dato | Completa aquí |
 |---|---|
-| Aprendiz | (tu nombre completo) |
-| Ficha | (número de ficha) |
-| Cobertura de líneas alcanzada en `CarritoCompras` | (ej. 95 %) |
+| Juan Jose Mendez Muñoz |
+| Ficha | 3292107 |
+| Cobertura de líneas alcanzada en `CarritoCompras` | 95% |
 
 ## Contenido
 - `src/main/java/co/edu/notas/` — código de producción (`CalculadoraNotas`, `CarritoCompras`)

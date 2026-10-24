@@ -8,6 +8,23 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
+/*
+ * ENTREGA DEL TALLER
+ * Nombre completo: Juan Jose Mendez Muñoz
+ * 1. Bug encontrado (método y línea de CarritoCompras.java):
+ *    agregarProducto, línea [25]: validaba "cantidad < 0" y la regla R1 exige
+ *    cantidad mayor a 0, por lo que la cantidad 0 era aceptada.
+ *    Corrección: "cantidad <= 0".
+ * 2. Prueba que lo detectó (nombre del método):
+ *    agregarProducto_cantidadCero_lanzaExcepcion
+ * 3. Sugerencia de la IA que rechacé o corregí, y por qué:
+ *    La IA, viendo solo el código, generó una prueba que aceptaba cantidad 0
+ *    como válida, porque el código original solo rechazaba cantidades < 0.
+ *    La rechacé porque la regla R1 exige cantidad mayor a 0, así que 0 debe
+ *    lanzar IllegalArgumentException. Por eso conviene darle a la IA las reglas
+ *    y no solo el código.
+ */
+
 class CarritoComprasTest {
 
     private CarritoCompras carrito;
